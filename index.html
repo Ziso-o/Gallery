@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="gallery.css">
+  <title>Panorama Gallery</title>
+  <link rel="shortcut icon" type="image/x-icon" href="fav.png">
+</head>
+<body>
+  <div id="gallery">
+    <div class="slider-controls">
+      <div class="slider-control-left">&lt;</div>
+      <div class="slider-control-right">&gt;</div>
+    </div>
+    <div id="slider">
+      <div class="slide">
+        <img src="image/01.jpg" alt="Image 1" onclick="showLightbox('image/01.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/02.jpg" alt="Image 2" onclick="showLightbox('image/02.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/03.jpg" alt="Image 3" onclick="showLightbox('image/03.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/04.jpg" alt="Image 4" onclick="showLightbox('image/04.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/05.jpg" alt="Image 5" onclick="showLightbox('image/05.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/06.jpg" alt="Image 6" onclick="showLightbox('image/06.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/07.jpg" alt="Image 7" onclick="showLightbox('image/07.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/08.jpg" alt="Image 8" onclick="showLightbox('image/08.jpg')">
+      </div>
+      <div class="slide">
+        <img src="image/09.jpg" alt="Image 9" onclick="showLightbox('image/09.jpg')">
+      </div>
+      <!-- 추가 이미지 -->
+    </div>
+  </div>
+  
+  <div class="lightbox-container" onclick="hideLightbox()">
+    <img class="lightbox-img" src="" alt="Lightbox Image">
+  </div>
+  
+  <script src="gallery.js"></script>
+</body>
+</html>
